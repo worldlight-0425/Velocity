@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  zoom: 52%;
+}
+
+.container{
+    max-width: max-content;
+    margin: auto;
+}
+
+.hide{
+    display: none;
+}
+.car{
+    width: 50px;
+    height: 70px;
+    background-color: red;
+    background-image: url('map2myCar.png');
+    position: absolute;
+    
+    bottom: 120px;
+}
+.enemy{
+    width: 50px;
+    height: 70px;
+    background-image: url('map2enemyCar.png');
+    position: absolute;
+    
+    bottom: 120px;
+}
+.gameArea{
+    background: #2d3436;
+    position: relative;
+    width: 400px;
+    height: 505px;
+    border: 1px solid black;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+    border-left: 5px dashed #ffffff;
+    border-right: 5px dashed #ffffff;
+}
+.lane{
+    width: 10px;
+    height: 100px;
+    background: #ffffff;
+    position: absolute;
+    margin-left: 195px;
+}
+
+#leftside{
+    border:1px solid #d3d3d3;
+    background:url('leftside.jpg');
+    animation: animatedBackground 5s linear infinite;
+    height: 500px;
+    width: 92px;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0px 2000px;
+  }
+}
+
+.leftdiv{
+    height: 500px;
+    width: 92px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+#rightside{
+    border:1px solid #d3d3d3;
+    background:url('rightside.jpg');
+    animation: animatedBackground 5s linear infinite;
+    height: 500px;
+    width: 92px;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0px 2000px;
+  }
+}
+.rightdiv{
+    height: 500px;
+    width: 92px;
+    display:inline-block;
+    vertical-align:middle
+
+}
+
+.scoreBar{
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: rgb(80, 87, 74);
+    color: #ffffff;
+}
+
+.score{
+    display:inline-block;
+    vertical-align:middle
+  }
+.sameer{
+    /* display:inline-block; */
+    vertical-align:middle;
+    float: right;
+}
+
+.btngrp{
+  width: 100%;
+}
+.lr{
+    max-width: 100%;
+    margin-left: 40%;
+    margin-top: -19%;
+}
+.leftbtn{
+  display:inline-block;
+  vertical-align:middle;
+}
+.rightbtn{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10%;
+}
+.downbtn{
+   margin-top: 5%;
+}
+.btnright{
+  background-color: #4285f4;
+    border: none;
+    padding: 20%;
+    color: #fff;
+    border-radius: 8%;
+    width: 150px;
+}
+.btnleft{
+  background-color: #4285f4;
+    border: none;
+    padding: 20%;
+    color: #fff;
+    border-radius: 8%;
+    width: 150px;
+}
+.btnup{
+ background-color: #4285f4;
+    border: none;
+    padding: 2%;
+    color: #fff;
+    border-radius: 8%;
+    width: 150px;
+}
+.btndown{
+  background-color: #4285f4;
+    border: none;
+    padding: 2%;
+    color: #fff;
+    border-radius: 8%;
+    width: 150px;
+}
+.scoreBoard {
+  position: absolute;
+  background-color: #ee5353;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 5;
+  font-size: 20px;
+  word-spacing: 3;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px #777777;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ee5353;
+}
+li {
+  color: #ffffff;
+  background-color: #10ac84;
+  text-align: center;
+  text-shadow: -2px 0 0 #fdff2a,
+    -4px 0 0 #df4a42,
+    2px 0 0 #91fcfe,
+    4px 0 0 #4405fc;
+  letter-spacing: 5px;
+  margin-top: 4%;
+  padding: 1%;
+}
+.scorePara{
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a,
+    -4px 0 0 #df4a42,
+    2px 0 0 #91fcfe,
+    4px 0 0 #4405fc;
+}

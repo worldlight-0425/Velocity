@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  zoom: 70%;
+}
+
+.container {
+  margin: auto;
+  width: max-content;
+}
+
+#game {
+  width: 300px;
+  height: 505px;
+  margin: auto;
+  box-sizing: border-box;
+  background-image: url(full-road.jpg);
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 5px dashed #ffffff;
+  border-right: 5px dashed #ffffff;
+}
+
+#character {
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: red; */
+  position: relative;
+  top: 300px;
+  left: 100px;
+  bottom: 2px;
+}
+
+.myCar {
+  background-color: red;
+}
+
+#block {
+  top: 500px;
+  position: relative;
+  animation: slide 1000ms infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    top: -100px
+  }
+  ;
+  100% {
+    top: 500px
+  }
+  ;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btnleft {
+  background-color: #4285f4;
+  border: none;
+  padding: 8%;
+  color: #fff;
+  border-radius: 8%;
+  width: 25%;
+  margin-left: 0%;
+}
+
+.btnright {
+  background-color: #4285f4;
+  border: none;
+  padding: 8%;
+  color: #fff;
+  border-radius: 8%;
+  width: 25%;
+  margin-left: 46%;
+}
+
+.score {
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: rgb(80, 87, 74);
+  color: #ffffff;
+}
+
+#leftside {
+  border: 1px solid #d3d3d3;
+  background: url('leftside.jpg');
+  animation: animatedBackground 5s linear infinite;
+  height: 500px;
+  width: 92px;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0px 2000px;
+  }
+}
+
+.leftdiv {
+  height: 500px;
+  width: 92px;
+  display: inline-block;
+  vertical-align: middle
+}
+
+#rightside {
+  border: 1px solid #d3d3d3;
+  background: url('rightside.jpg');
+  animation: animatedBackground 5s linear infinite;
+  height: 500px;
+  width: 92px;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0px 2000px;
+  }
+}
+
+.rightdiv {
+  height: 500px;
+  width: 92px;
+  display: inline-block;
+  vertical-align: middle
+}
+
+#para {
+  display: inline-block;
+  vertical-align: middle
+}
+
+#sameer {
+  /* display:inline-block; */
+  vertical-align: middle;
+  float: right;
+}
+
+.scoreBoard {
+  position: absolute;
+  background-color: #ee5353;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 5;
+  font-size: 20px;
+  word-spacing: 3;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px #777777;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ee5353;
+}
+
+li {
+  color: #ffffff;
+  background-color: #10ac84;
+  text-align: center;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+  letter-spacing: 5px;
+  margin-top: 4%;
+  padding: 1%;
+}
+
+.scorePara {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+}
+
+/* #848284 *

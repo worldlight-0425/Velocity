@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" onclick="audio.play">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="map2.css">
+  <script type="text/javascript">
+    var audio = new Audio("sound[1].mp3");
+    audio.oncanplaythrough = function () {
+      audio.play();
+    }
+    audio.loop = true;
+    audio.onended = function () {
+      audio.play();
+    }
+  </script>
+</head>
+
+<body onload="start()">
+  <audio src="car-crash.mp3" id="crash"></audio>
+
+  <div class="container">
+    <div class="scoreBar">
+      <div class="score">
+      </div>
+      <div id="sameer" class="sameer">
+        <p>By - Sameer Balyan</p>
+      </div>
+    </div>
+
+    <div class="leftdiv">
+      <canvas id="leftside"></canvas>
+    </div>
+    <div class="gameArea"></div>
+    <div class="rightdiv">
+      <canvas id="rightside"></canvas>
+    </div>
+
+    <div class="btngrp">
+      <div class="upbtn">
+        <button class="btnup" onclick="moveUp()">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+          </svg>
+        </button>
+      </div>
+      <div class="downbtn">
+        <button class="btndown" onclick="moveDown()">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+          </svg>
+        </button>
+      </div>
+      <div class="lr">
+        <div class="leftbtn">
+          <button class="btnleft" onclick="moveLeft()">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+          </button>
+        </div>
+        <div class="rightbtn">
+          <button class="btnright" onclick="moveRight()">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scoreBoard">
+    <p class="scorePara">!!GAME OVER** YOUR SCORE IS : <span id="scoreSpan"></span></p>
+    <a href="">
+      <li><button></button> Play Again </button></li>
+    </a>
+    <a href="selectMode.html">
+      <li><button></button> Go Back </button></li>
+    </a>
+  </div>
+  <script src="map2.js"></script>
+</body>
+
+</html>

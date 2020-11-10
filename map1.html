@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" onclick="audio.play()">
+<head>
+<script type="text/javascript">
+    var audio = new Audio("GPHORSEpower.mp3");
+    audio.oncanplaythrough = function () {
+      audio.play();
+    }
+    audio.loop = true;
+    audio.onended = function () {
+     audio.play();
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocity -By - Sameer Balyan</title>
+  <link rel="stylesheet" href="map1.css">
+</head>
+<body oncontextmenu="return false">
+  <audio src="car-crash.mp3" id="crash"></audio>
+    <div class="container">
+    <div class="score">
+      <div id="para">
+      <p>Score: <span id="scoreSpan"></span></p>
+    </div>
+    <div id="sameer">
+      <p>By - Sameer Balyan</p>
+    </div>
+    </div>
+    <div class="leftdiv">
+      <canvas id="leftside"></canvas>
+    </div>
+    <div id="game">
+       <div id="block"><img src="map1enemy.png" alt="enemy" width="100px" height="100px" id="enemy"></div>
+      <div id="character"><img src="map1myCar.png" alt="my_car" width="100px" height="100px" class="myCar"></div>
+    </div>
+    <div class="rightdiv">
+      <canvas id="rightside"></canvas>
+    </div>
+    <div class="btn">
+    <button onclick="moveLeft()" class="btnleft" id="btn"">
+      <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z" />
+        <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+
+    <button onclick="moveRight()" class="btnright" id="btn">
+      <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+      </svg>
+    </button>
+
+    <div class="scoreBoard">
+      <p class="scorePara">!!GAME OVER** YOUR SCORE IS : <span id="ScoreSpan"></span></p>
+      <a href=""><li><button></button> Play Again </button></li></a>
+			<a href="selectMode.html"><li><button></button> Go Back </button></li></a>
+    </div>
+
+    </div>
+
+  
+</body>
+<script src="map1.js"></script>
+</html>
